@@ -612,37 +612,7 @@ margin-top: 100px;
 
 
 
-/* Media - Video Section CSS
 
-Tags included:
-
-1. #main-media-container - main container where all the elements in the section architecto
-
-2. #media-title-description - id of the container with the title and description
-
-3. #media-separator - separator between title and description
-
-4. #media-title-description p - styling applied only to the main description
-
-5. #media-video-text-container - general container keeping the title, description and video
-
-6. #media-text - id of the container with the title and description at the left of the Video
-
-7. #media-text h2 - styling of the h2 within the media-text container
-
-8. #media-text p - styling of the p within the media-text container
-
-9. #text-video-separator - separator between the text and the Video
-
-10. #media-button - the button bellow the text at the left of the video
-
-11. #media-button:hover - styling of the hover state of the button
-
-12. media-video -container with the video
-
-13. iframe-video - the iframe tag containing the YouTube video
-
-*/
 
 #main-media-container {
   box-shadow: 2px 2px 15px #bebebe;
@@ -841,29 +811,7 @@ Tags included:
 
 
 
-/* Newsletter Section CSS
 
-Tags included:
-
-1. #newsletter-container - main newsletter section container
-
-2. #newsletter-title-description - container with the main title and description
-
-3. #newsletter-title-description h1 - styling for the main title
-
-4. #newsletter-input-container - container with the form and input elements
-
-5. #email-form - the id given to the <form> tag
-
-6. #email-form label - styling of the label before the <input> tag
-
-7. #email-input - id of the <input> tag where the email will be written
-
-8. #email-form button - styling of the "submit" button after the <input> tag
-
-9. #email-form button:hover - styling for the hover state of the button
-
-*/
 
 #newsletter-container {
   display: flex;
