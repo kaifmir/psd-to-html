@@ -1,0 +1,1844 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: auto;
+  height: auto;
+  /* font-size: 18px; */
+  font-family: "Noto Sans";
+}
+
+
+#main{
+
+}
+#red-text {
+    color: #ff5a6e;
+}
+
+#title-text-separator {
+  width: 9%;
+  margin-top: 1%;
+  margin-left: 300px;
+  border: solid 1px #4c894d;
+}
+
+#title-page-seperator {
+  width: 60%;
+  margin-top: 0%;
+ 
+  border: solid 1px #c4c4c4;
+}
+
+.responsive-menu-link {
+  color: black;
+}
+
+
+/* ----- General Header CSS ------ */
+
+#header {
+  position: fixed;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  font-size: 19px;
+  min-height: 100px;
+}
+
+
+
+
+
+/* Normal Header */
+
+.active-header {
+  background-color: rgb(14, 13, 13);
+  color: rgb(207, 204, 204);
+}
+
+.menu-link {
+  color: white;
+}
+
+.active-menu-links {
+  color: white;
+}
+
+#normal-header {
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  font-size: 19px;
+  min-height: 100px;
+}
+
+#header-img {
+  width: 250px;
+  margin-left: 15%;
+}
+
+#nav-bar {
+}
+
+#nav-bar ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row;
+}
+
+#nav-bar li {
+  padding: 10px;
+  margin: 12px;
+}
+
+#nav-bar ul, a {
+  text-decoration: none;
+}
+
+
+
+
+
+
+/* Responsive Header */
+
+#responsive-header {
+  display: none;
+}
+
+#image-button-black {
+  display: none;
+  border: none;
+}
+
+#image-button-black:hover {
+  cursor: pointer;
+}
+
+#image-button-black:focus {
+  outline: 0;
+}
+
+
+
+
+
+/* ----- Hero Header CSS -----
+
+Tags included:
+
+1. hero-header - main container of the Hero
+
+2. hero-content - the container of the title and description within the hero Section
+
+3. hero-title - the title within the hero section
+
+4. hero-text - the text within the hero section
+
+5. hero-button - the button within the hero section
+
+*/
+
+#hero-header {
+  /* width: 100vw; */
+  height: 100vh;
+  box-shadow: 3px 3px 2px #bebebe;
+
+  /* hero-header flexbox */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Texy style */
+  text-align: center;
+  color: white;
+
+  /* Background image */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(images/bg.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#hero-title {
+  font-size: 3.5em;
+}
+
+#hero-text {
+  font-size: 1.3em;
+  margin-top: 2%;
+}
+
+#hero-button {
+  border: solid 2px white;
+  background-color: inherit;
+  color: white;
+  margin-top: 6%;
+  width: 25%;
+  height: 55px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+#hero-button:hover {
+  cursor: pointer;
+}
+
+input{
+height: 30px;
+width:120px;
+padding: 15px;
+border-radius: 10px;
+
+}
+
+
+
+
+
+
+
+
+#features-container {
+  box-shadow: 2px 2px 15px #bebebe;
+  margin-top: 5%;
+  padding: 2%;
+ 
+}
+
+#service-features {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  /* Change flow-direction to "column" in the responsive design for the features to stack
+  one on top of another. */
+  justify-content: space-evenly;
+  margin-top: 2%;
+  padding-bottom: 3%;
+  width: 100%;
+  background-image: url("images/Vector\ Smart\ Object\ copy.png");
+background-repeat: no-repeat;
+
+}
+
+#features-description {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 2%;
+  padding: 1%;
+  display: flex;
+  width: 60%;
+}
+
+#features-description h1 {
+  font-size: 45px;
+}
+
+#features-description p {
+  padding: 1%;
+  margin-top: 1%;
+}
+
+#featureImg {
+  width: 25%;
+  background-image: url("images/Layer\ 2.png");
+  text-align: center;
+  display: flex;
+ 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 45vh;
+ 
+  
+}
+
+
+#partnerImg {
+  width: 5%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+ 
+  
+}
+
+
+.overlaystories {
+
+  position: absolute;
+    
+margin-top: -210px;
+   
+    transition: .5s ease;
+    opacity:1;
+    color: rgb(32, 30, 30);
+    font-size: 15px;
+    padding: 20px; 
+    width: 20%;
+    text-align: center;
+  }
+
+.overlay {
+
+margin-top: 100px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 80%;
+  transition: .5s ease;
+  opacity:0.5;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+#roundfeature {
+ 
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  
+}
+
+.circle{
+  border-radius: 50%;
+  background-color: rgb(185, 183, 183);
+  padding: 20px;
+  color: rgb(3, 3, 3);
+  font-weight: bold;
+
+
+
+}
+
+
+#blog {
+  width: 25%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  padding: 10px;
+  box-shadow: 1px 2px 15px #bebebe;
+
+}
+
+
+#media {
+  width: 25%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  padding: 10px;
+  box-shadow: 1px 2px 15px #bebebe;
+
+}
+
+
+ 
+#blog img {
+
+  padding-top: 5%;
+}
+
+#feature {
+  width: 25%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  border: solid 1px #bebebe;
+  box-shadow: 1px 2px 15px #bebebe;
+}
+
+#feature img {
+  max-width: 30%;
+  max-height: 30%;
+  padding-top: 5%;
+}
+
+#feature-title {
+  margin-top: 5%;
+}
+
+#feature p {
+  width: 70%;
+  margin-top: 5%;
+}
+
+
+#stories-button {
+  border: none;
+ 
+  width: 20vh;
+ 
+ 
+  background-color: #3b7cd1;
+  color: white;
+  font-size: 16px;
+  margin-top: -120px;
+  
+}
+
+#stories-button:hover {
+  background-color: #489168;
+  cursor: pointer;
+}
+
+
+
+#feature-button {
+  border: none;
+  margin-top: 30%;
+  width: 20vh;
+  height: 5vh;
+  border-radius: 1px;
+  background-color: #3b7cd1;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 20%;
+}
+
+#feature-button:hover {
+  background-color: #489168;
+  cursor: pointer;
+}
+
+
+
+
+
+/
+
+
+
+
+
+#presentation-container {
+  display: flex;
+  flex-flow: column;
+}
+
+#presentation-title-description {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  margin-top: 5%;
+  width: 60%;
+}
+
+#presentation-title-description h1 {
+  font-size: 45px;
+}
+
+#presentation-title-description p {
+  margin-top: 1%;
+}
+
+#section-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-button {
+  border: none;
+  border-radius: 50%;
+  background-color: inherit;
+  box-shadow: 1px 2px 15px #bebebe;
+  padding: 15px;
+  width : 70%;
+	height : 70%;
+	max-width : 70%;
+	max-height : 70%;
+
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+
+  margin: 2%;
+  font-size: 15px;
+}
+
+.product-button:hover {
+  cursor: pointer;
+}
+
+.product-button:focus {
+  outline: 0;
+}
+
+.product-button-active {
+  background-color: #757172;
+  color: white;
+}
+
+
+
+
+/* -- SUBSECTION CSS: Section Content CSS -- */
+
+#section-content-container {
+  margin: auto;
+  width: 75%;
+}
+
+.product-content {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  padding: 2%;
+}
+
+#content-image {
+  width: 100%;
+  height: 100%;
+  width: 70%;
+  height: auto;
+}
+
+#content-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+#content-title-text {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  width: 50%;
+  padding: 1%;
+}
+
+#content-title-text p {
+  margin-top: 2%;
+}
+
+.product-features-list {
+  display: flex;
+  flex-flow: row;
+  align-items: flex-start;
+  margin-top: 5%;
+}
+
+#first-feature-list {
+  margin-top: 0;
+}
+
+#product-feature-image {
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 10%;
+}
+
+#correct-icon {
+  width: 100%;
+  height: 100%;
+}
+
+#inside-features-title-text {
+  display: flex;
+  flex-flow: column;
+  margin-left: 2%;
+}
+
+#content-button {
+  border: none;
+  border-radius: 10px;
+  background-color: #ff5a6e;
+  box-shadow: 1px 2px 15px #bebebe;
+  padding: 15px;
+  width: 25%;
+  margin-top: 6%;
+  font-size: 16px;
+  color: white;
+}
+
+#content-button:hover {
+  cursor: pointer;
+  background-color: #ff7b8b;
+}
+
+
+
+
+
+
+/* Media - Video Section CSS
+
+Tags included:
+
+1. #main-media-container - main container where all the elements in the section architecto
+
+2. #media-title-description - id of the container with the title and description
+
+3. #media-separator - separator between title and description
+
+4. #media-title-description p - styling applied only to the main description
+
+5. #media-video-text-container - general container keeping the title, description and video
+
+6. #media-text - id of the container with the title and description at the left of the Video
+
+7. #media-text h2 - styling of the h2 within the media-text container
+
+8. #media-text p - styling of the p within the media-text container
+
+9. #text-video-separator - separator between the text and the Video
+
+10. #media-button - the button bellow the text at the left of the video
+
+11. #media-button:hover - styling of the hover state of the button
+
+12. media-video -container with the video
+
+13. iframe-video - the iframe tag containing the YouTube video
+
+*/
+
+#main-media-container {
+  box-shadow: 2px 2px 15px #bebebe;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+#media-title-description {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 4%;
+  width: 90%;
+}
+
+#media-title-description h1 {
+  font-size: 45px;
+}
+
+#media-title-description p {
+  margin-top: 1%;
+}
+
+#media-video-text-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 75%;
+  padding: 3% 2% 3% 2%;
+  /* background-color: #f5f5f5; */
+  border-radius: 10px;
+}
+
+#media-text {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  width: 40%;
+  height: auto;
+}
+
+#media-text h2 {
+  font-size: 30px;
+}
+
+#media-text p {
+  font-size: 17px;
+  margin-top: 3%;
+}
+
+#text-video-sperator {
+  height: 20vh;
+  border: solid 0.5px #e1e1e1;
+}
+
+#media-button {
+  border: solid 1px #c1c1c1;
+  border-radius: 10px;
+  background-color: inherit;
+  box-shadow: 1px 2px 2px #bebebe;
+  padding: 15px;
+  width: 25%;
+  margin-top: 5%;
+  font-size: 15px;
+  color: black;
+}
+
+#media-button:hover {
+  cursor: pointer;
+  background-color: white;
+  background-color: #ff5a6e;
+  color: white;
+}
+
+#media-video {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#video {
+  width: 60vh;
+  height: 35vh;
+}
+
+
+
+
+
+
+#prices-section-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  margin-top: 3%;
+}
+
+#prices-title-description {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 60%;
+}
+
+#prices-title-description h1 {
+  font-size: 45px;
+}
+
+#prices-separator {
+  width: 5%;
+  margin-top: 2%;
+  border: solid 1px #ff5a63;
+}
+
+#prices-title-description p {
+  margin-top: 1%;
+}
+
+#all-prices-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+}
+
+.price-container {
+
+  text-align: center;
+  margin-top: 7%;
+  width: 27%;
+}
+
+.price-container h1 {
+  color: #ff5a63;
+  font-size: 45px;
+  margin-top: 6%;
+}
+
+.price-container h2 {
+  color: #323a45;
+  font-size: 40px;
+  margin-top: 4%;
+}
+
+.price-container p {
+  margin-top: 4%;
+  font-size: 17px;
+}
+
+.price-container hr{
+  margin: auto;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  width: 70%;
+  border: solid 0.5px #c1c1c1;
+}
+
+.price-container ul {
+  list-style: none;
+}
+
+.price-container li {
+  padding: 3%;
+}
+
+.price-container button {
+  border: none;
+  border-radius: 10px;
+  background-color: #ff5a6e;
+  box-shadow: 1px 2px 15px #bebebe;
+  padding: 15px;
+  width: 30%;
+  margin-top: 6%;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 6%;
+}
+
+.price-container button:hover {
+  cursor: pointer;
+  background-color: #ff7b8b;
+}
+
+
+
+
+
+/* Newsletter Section CSS
+
+Tags included:
+
+1. #newsletter-container - main newsletter section container
+
+2. #newsletter-title-description - container with the main title and description
+
+3. #newsletter-title-description h1 - styling for the main title
+
+4. #newsletter-input-container - container with the form and input elements
+
+5. #email-form - the id given to the <form> tag
+
+6. #email-form label - styling of the label before the <input> tag
+
+7. #email-input - id of the <input> tag where the email will be written
+
+8. #email-form button - styling of the "submit" button after the <input> tag
+
+9. #email-form button:hover - styling for the hover state of the button
+
+*/
+
+#newsletter-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+}
+
+#newsletter-title-description {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 60%;
+}
+
+#newsletter-title-description h1 {
+  font-size: 45px;
+}
+
+#email-input-container {
+  margin-top: 1%
+}
+
+#email-form {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#email-form label {
+  font-size: 20px;
+}
+
+#email {
+  font-size: 18px;
+  margin-top: 4%;
+  padding: 3%;
+  width: 150%;
+}
+
+#submit {
+  border: none;
+  border-radius: 10px;
+  background-color: #ff5a6e;
+  box-shadow: 1px 2px 15px #bebebe;
+  font-size: 16px;
+  color: white;
+  margin-top: 5%;
+  padding: 15px;
+  width: 40%;
+}
+
+#submit:hover {
+  cursor: pointer;
+  background-color: #ff7b8b;
+}
+
+
+
+/* Footer Section */
+
+footer {
+  box-shadow: 1px 2px 15px #bebebe;
+  margin-top: 4%;
+  color: #858585;
+  text-align: center;
+}
+
+footer p {
+  padding: 0.5%;
+}
+
+
+
+
+
+
+
+
+
+
+/* @Media min-width: 480px */
+@media only screen and (min-width : 200px) and (max-width : 860px) {
+
+  /* General Elements */
+
+  #title-text-separator {
+    width: 15%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border: solid 1px #ff5a6e;
+  }
+
+
+  /* Navigation CSS */
+  #header {
+    background: black;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 80px;
+    margin: auto;
+  }
+
+
+  #normal-header {
+    display: none;
+  }
+
+  #responsive-header {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    margin: auto;
+  }
+
+  #responsive-logo-button {
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 0 1% 0;
+  }
+
+  #responsive-nav-bar {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  #responsive-nav-bar ul {
+    list-style: none;
+  }
+
+  #responsive-nav-bar li {
+    text-align: center;
+    font-size: 23px;
+    margin-top: 40%;
+  }
+
+  #responsive-first-item {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  #header-img-black {
+    margin-left: 5%;
+    margin-top: 3%;
+    width: 60%;
+    height: auto;
+  }
+
+  #dropdown-button-black {
+    display: block;
+    width: 55%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  #image-button-black {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: inherit;
+    padding: 2%;
+  }
+
+
+
+
+  /* Hero CSS */
+
+  #hero-header {
+    width: auto;
+    height: 200vh;
+
+    /* hero-header flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    /* Texy style */
+    text-align: center;
+    color: white;
+
+    /* Background image */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("images/bg.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  #hero-title {
+    font-size: 3.5em;
+  }
+
+  #hero-text {
+    font-size: 1.3em;
+    margin-top: 2%;
+  }
+
+  #hero-button {
+    border: solid 2px white;
+    background-color: inherit;
+    color: white;
+    margin-top: 6%;
+    width: 25%;
+    height: 55px;
+    font-size: 15px;
+    border-radius: 10px;
+  }
+
+  #hero-button:hover {
+    cursor: pointer;
+  }
+
+
+
+  /* Service Features CSS */
+
+  #service-features {
+    display: flex;
+    flex-direction: column;
+    /* Change flow-direction to "column" in the responsive design for the features to stack
+    one on top of another. */
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2%;
+  }
+
+  #features-description {
+    width: 90%;
+  }
+
+  #feature {
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #bebebe;
+    box-shadow: 1px 2px 15px #bebebe;
+    margin-top: 10%;
+  }
+
+  #feature-button {
+    border: none;
+    margin-top: 30%;
+    width: 15vh;
+    height: 5vh;
+    border-radius: 15px;
+    background-color: #ff5a6e;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 20%;
+  }
+
+
+
+
+  /* Presentation Section CSS */
+
+  #presentation-container {
+    margin-top: 5%;
+  }
+
+  #presentation-title-description {
+    width: 90%;
+  }
+
+  #section-buttons {
+    margin-top: 5%;
+  }
+
+  #section-content-container {
+    margin: auto;
+    width: 90%;
+  }
+
+  #section-content-container {
+    margin-top: 7%;
+  }
+
+  .product-button {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 40%;
+    padding: 15px;
+  }
+
+  .product-content {
+    display: flex;
+    flex-flow: column;
+    padding: 2%;
+  }
+
+  #content-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  #content-image-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #content-title-text {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin: auto;
+    margin-top: 5%;
+  }
+
+  #content-title-text h1 {
+    margin: auto;
+  }
+
+  #centered-product-description {
+    text-align: center;
+  }
+
+  #content-title-text p {
+    margin-top: 5%;
+  }
+
+  #product-feature-image {
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+  }
+
+  .product-features-list {
+    margin-top: 15%;
+  }
+
+  #first-feature-list {
+    margin-top: 10%;
+  }
+
+  #content-button {
+    margin: auto;
+    margin-top: 10%;
+    width: 35%;
+  }
+
+
+
+
+  /* -- Media Section CSS -- */
+
+  #main-media-container {
+    margin-top: 5%;
+  }
+
+  #media-title-description {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    margin-top: 8%;
+  }
+
+  #media-video-text-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 2% 1% 2% 1%;
+    margin-top: 10%;
+    text-align: center;
+  }
+
+  #media-text {
+    width: 100%;
+  }
+
+  #media-text h2 {
+    margin: auto;
+  }
+
+  #media-text p {
+    margin-top: 6%;
+  }
+
+  #text-video-sperator {
+    height: 1%;
+    width: 80%;
+    margin-top: 10%;
+    margin-bottom: 9%;
+  }
+
+  #media-button {
+    width: 30%;
+    margin: auto;
+    margin-top: 7%;
+  }
+
+  #media-video {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  #iframe-video {
+    width: 50vh;
+    height: 30vh;
+    margin-bottom: 8%;
+  }
+
+
+  /* -- Prices Section CSS -- */
+
+  #prices-section-container {
+    margin-top: 15%;
+  }
+
+  #prices-title-description {
+    width: 90%;
+  }
+
+  #all-prices-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .price-container {
+    width: 90%;
+    margin-top: 15%;
+  }
+
+  #price-container-two {
+    margin-top: 15%;
+  }
+
+  .price-container button {
+    width: 35%;
+  }
+
+
+
+  /* Email Section CSS */
+
+  #newsletter-container {
+    margin-top: 10%;
+  }
+
+  #newsletter-title-description {
+    width: 90%;
+  }
+
+  #email-form label {
+    width: 90%;
+    text-align: center;
+  }
+
+  #email {
+    width: 80%;
+  }
+
+
+  /* Footer Section */
+
+  footer {
+    margin-top: 10%;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width : 860px) and (max-width : 1280px) {
+
+
+    /* Navigation CSS */
+    #header {
+      background: black;
+      position: fixed;
+      display: flex;
+      flex-wrap: wrap;
+      flex-flow: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      min-height: 80px;
+      margin: auto;
+    }
+
+
+    #normal-header {
+      display: none;
+    }
+
+    #responsive-header {
+      display: flex;
+      flex-flow: column;
+      width: 100%;
+      margin: auto;
+    }
+
+    #responsive-logo-button {
+      display: flex;
+      justify-content: space-between;
+      padding: 1% 0 1% 0;
+    }
+
+    #responsive-nav-bar {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+    }
+
+    #responsive-nav-bar ul {
+      list-style: none;
+    }
+
+    #responsive-nav-bar li {
+      text-align: center;
+      font-size: 23px;
+      margin-top: 40%;
+    }
+
+    #responsive-first-item {
+      margin-top: 0;
+      padding: 0;
+    }
+
+    #header-img-black {
+      margin-left: 5%;
+      margin-top: 3%;
+      width: 50%;
+      height: auto;
+    }
+
+    #dropdown-button-black {
+      display: block;
+      width: 55%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    #image-button-black {
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: inherit;
+      padding: 2%;
+    }
+
+
+  /* Hero CSS */
+
+  #hero-header {
+    width: auto;
+    height: 120vh;
+
+    /* hero-header flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    /* Texy style */
+    text-align: center;
+    color: white;
+
+    /* Background image */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("images/bg.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+  #hero-title {
+    font-size: 3.5em;
+  }
+
+  #hero-text {
+    font-size: 1.3em;
+    margin-top: 2%;
+  }
+
+  #hero-button {
+    border: solid 2px white;
+    background-color: inherit;
+    color: white;
+    margin-top: 6%;
+    width: 25%;
+    height: 55px;
+    font-size: 15px;
+    border-radius: 10px;
+  }
+
+  #hero-button:hover {
+    cursor: pointer;
+  }
+
+
+
+  /* Service Features CSS */
+
+  #service-features {
+    display: flex;
+    flex-flow: row;
+    /* Change flow-direction to "column" in the responsive design for the features to stack
+    one on top of another. */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 2%;
+  }
+
+  #features-description {
+    width: 90%;
+  }
+
+  #feature {
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #bebebe;
+    box-shadow: 1px 2px 15px #bebebe;
+    margin-top: 10%;
+  }
+
+  #feature-button {
+    border: none;
+    margin-top: 30%;
+    width: 15vh;
+    height: 5vh;
+    border-radius: 15px;
+    background-color: #ff5a6e;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 20%;
+  }
+
+
+
+
+  /* Presentation Section CSS */
+
+  #presentation-container {
+    margin-top: 5%;
+    width: 80%;
+    margin: auto;
+  }
+
+  #presentation-title-description {
+    width: 90%;
+  }
+
+  #section-buttons {
+    margin-top: 5%;
+  }
+
+  #section-content-container {
+    margin: auto;
+    width: 90%;
+  }
+
+  #section-content-container {
+    margin-top: 7%;
+  }
+
+  .product-button {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 40%;
+    padding: 15px;
+  }
+
+  .product-content {
+    display: flex;
+    flex-flow: column;
+    padding: 2%;
+  }
+
+  #content-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  #content-image-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #content-title-text {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin: auto;
+    margin-top: 5%;
+  }
+
+  #content-title-text h1 {
+    margin: auto;
+  }
+
+  #centered-product-description {
+    text-align: center;
+  }
+
+  #content-title-text p {
+    margin-top: 5%;
+  }
+
+  #product-feature-image {
+    justify-content: center;
+    align-items: center;
+    width: 8%;
+  }
+
+  .product-features-list {
+    margin-top: 15%;
+  }
+
+  #first-feature-list {
+    margin-top: 10%;
+  }
+
+  #content-button {
+    margin: auto;
+    margin-top: 10%;
+    width: 35%;
+  }
+
+
+
+
+  /* -- Media Section CSS -- */
+
+  #main-media-container {
+    margin-top: 5%;
+  }
+
+  #media-title-description {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    margin-top: 8%;
+  }
+
+  #media-video-text-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 2% 1% 2% 1%;
+    margin-top: 10%;
+    text-align: center;
+  }
+
+  #media-text {
+    width: 100%;
+  }
+
+  #media-text h2 {
+    margin: auto;
+  }
+
+  #media-text p {
+    margin-top: 6%;
+  }
+
+  #text-video-sperator {
+    height: 1%;
+    width: 80%;
+    margin-top: 10%;
+    margin-bottom: 9%;
+  }
+
+  #media-button {
+    width: 35%;
+    margin: auto;
+    margin-top: 7%;
+  }
+
+  #media-video {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  #iframe-video {
+    width: 80vh;
+    height: 50vh;
+    margin-bottom: 9%;
+  }
+
+
+  /* -- Prices Section CSS -- */
+
+  #prices-section-container {
+    margin-top: 15%;
+  }
+
+  #prices-title-description {
+    width: 90%;
+  }
+
+  #all-prices-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .price-container {
+    width: 50%;
+    margin-top: 15%;
+  }
+
+  #price-container-two {
+    margin-top: 15%;
+  }
+
+  .price-container button {
+    width: 35%;
+  }
+
+
+
+  /* Email Section CSS */
+
+  #newsletter-container {
+    margin-top: 10%;
+  }
+
+  #newsletter-title-description {
+    width: 90%;
+  }
+
+  #email-form label {
+    width: 90%;
+    text-align: center;
+  }
+
+  #email {
+    width: 80%;
+  }
+
+}
+
+
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f100;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+  
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
